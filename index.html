@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  html {
-  scroll-padding-top: 100px; /* Adjust if needed */
-}
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+  html {
+    scroll-padding-top: 100px;
+  }
+</style>
+
   <title>Subash Kondal K S | Software Developer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/typed.js@2.0.12"></script>
@@ -69,38 +71,18 @@
 
 <!-- Header -->
 <header class="fixed top-0 left-0 w-full bg-[#0f111a]/80 backdrop-blur-md z-50 shadow-md">
-  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 text-white">
- 
-<div class="max-w-7xl mx-auto flex flex-col items-center px-6 py-4 text-white">
-<nav class="flex justify-center gap-4 text-sm font-medium">
-  <a href="#home" class="bg-[#1e293b] text-white px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300">
-    Home
-  </a>
-  <a href="#about" class="bg-[#1e293b] text-white px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300">
-    About
-  </a>
-  <a href="#projects" class="bg-[#1e293b] text-white px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300">
-    Projects
-  </a>
-  <a href="#skills" class="bg-[#1e293b] text-white px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300">
-    Skills
-  </a>
-  <a href="https://drive.google.com/drive/folders/1WusPMpW-kAIVlt8sWHvVwiBgTxAvGG4R?usp=sharing" target="_blank"
-     class="bg-[#1e293b] text-white px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300">
-    Certificates
-  </a>
-  <a href="#contact" class="bg-[#1e293b] text-white px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300">
-    Contact
-  </a>
-</nav>
-
-
-
-
-</div>
-
-
-  </div>
+  <nav class="max-w-7xl mx-auto flex justify-center gap-4 px-6 py-4 text-sm font-medium text-white">
+    <a href="#home" class="bg-[#1e293b] px-4 py-2 rounded-md hover:bg-cyan-500 transition">Home</a>
+    <a href="#about" class="bg-[#1e293b] px-4 py-2 rounded-md hover:bg-cyan-500 transition">About</a>
+    <a href="#projects" class="bg-[#1e293b] px-4 py-2 rounded-md hover:bg-cyan-500 transition">Projects</a>
+    <a href="#skills" class="bg-[#1e293b] px-4 py-2 rounded-md hover:bg-cyan-500 transition">Skills</a>
+    <a href="https://drive.google.com/drive/folders/1WusPMpW-kAIVlt8sWHvVwiBgTxAvGG4R?usp=sharing"
+       target="_blank"
+       class="bg-[#1e293b] px-4 py-2 rounded-md hover:bg-cyan-500 transition">
+       Certificates
+    </a>
+    <a href="#contact" class="bg-[#1e293b] px-4 py-2 rounded-md hover:bg-cyan-500 transition">Contact</a>
+  </nav>
 </header>
 
 
@@ -379,7 +361,7 @@ Designed using modern UI principles, the layout emphasizes clarity, minimalism, 
 
 
 
-<!-- Lottie Script -->
+<!-- Lottie Script
 <script>
   lottie.loadAnimation({
     container: document.getElementById('brain-ai'),
@@ -388,7 +370,7 @@ Designed using modern UI principles, the layout emphasizes clarity, minimalism, 
     autoplay: true,
     path: './images/animations/brain.json'
   });
-</script>
+</script> -->
 
 <!-- Contact -->
 <section class="py-20 bg-gray-950 text-center" id="contact">
@@ -452,13 +434,6 @@ Designed using modern UI principles, the layout emphasizes clarity, minimalism, 
  
 
   AOS.init({ duration: 900, once: true });
-  lottie.loadAnimation({
-    container: document.getElementById('lottie-animation'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'https://assets9.lottiefiles.com/packages/lf20_ikvz7qhc.json'
-  });
   new Typed('#typed-role', {
     strings: [
   "Software Developer",
@@ -477,27 +452,30 @@ Designed using modern UI principles, the layout emphasizes clarity, minimalism, 
     "max-glare": 0.3
   });
 </script>
+
 <!-- Additional Lottie Animations -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-    lottie.loadAnimation({
-      container: document.getElementById('brain-ai'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'https://assets4.lottiefiles.com/packages/lf20_jcikwtux.json'
-    });
-
-    lottie.loadAnimation({
-      container: document.getElementById('contact-lottie'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'https://assets10.lottiefiles.com/packages/lf20_zrqthn6o.json'
-    });
-
+  // Skills section (ONLY ONE brain animation)
+  lottie.loadAnimation({
+    container: document.getElementById('brain-ai'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: './images/animations/brain.json'
   });
+
+  // Contact section
+  lottie.loadAnimation({
+    container: document.getElementById('contact-lottie'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'https://assets10.lottiefiles.com/packages/lf20_zrqthn6o.json'
+  });
+
+});
 </script>
 
 </body>
